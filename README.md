@@ -14,7 +14,7 @@ I started with meetings because there are many more public meetings than there a
 
 [langgraph](https://github.com/langchain-ai/langgraph)is a library for building stateful, multi-actor applications with LLMs, built on top of (and intended to be used with) LangChain. It is low-code but not no-code.
 
-The depository is set up so that an application can be uploaded to the Streamlit cloud. That has been done and the application is [here](https://meeting-reporter.streamlit.app/). The .gitignore and requirements.txt are specific to streamlit cloud.
+The repository is set up so that an application can be uploaded to the Streamlit cloud. 
 
 mm_agent.py in this repository contains the main logic and all of the langchain speciifc code for the application. If you run it as a main program in your own Python environment, it will use tkinter rather than streamlit for UI.
 
@@ -24,26 +24,6 @@ mytools.py are a few miscellaneous uilities of mine.
 
 mm_tkinter.py contains  the tkinter specific code. It is not used in the streamliit version.
 
-
-## usage
-
-### as a streamlit app:
-Click the URL https://meeting-reporter.streamlit.app/. You will need an OPENAI api key in the paid tier. The free api key will not work because the agents use GPT4.
-
-### as a basis for deploying your own Streamlit app.
-1. clone the repository.
-2. make any changes you want to make.
-3. be sure to update .gitignore and requirements.txt as needed.
-4. deploy from Streamlit (you need an acount, of course).
-
-### in a Python environment
-
-1. download the mm_agent, mytools, and mm_tkinter modules 
-2. Set up a .env file with an entry for OPENAI_API_KEY set equal to your paid OpenAI key or otherwise set an environmental variable with that name
-3. Run mm_agent.py.
-
-### as a custom GPT (no api key or paid subscription required)
-click the URL https://chatgpt.com/g/g-roNR24Ty6-collaborative-meeting-reporter.
 
 ## ideas for enhancement
 1. Select a prompt depending on the content of the source
