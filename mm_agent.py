@@ -108,10 +108,10 @@ class CritiqueAgent:
                        f"Be sure that names are given for split votes and for debate."
                        f"The maker of each motion should be named."
                        f"if you think the article is good, please return only the word 'None' without the surrounding hash marks.\n"
-                       f"do NOT return any text except the word 'None' without surrounding hash marks if no further work is needed onthe article."
+                       f"do NOT return any text except the word 'None' without surrounding hash marks if no further work is needed on the article."
                        f"if you noticed the field 'message' in the article, it means the writer has revised the article"
                        f"based on your previous critique. The writer may have explained in message why some of your"
-                       f"critique could not be accomodated. For example, something you asked for is not available information."
+                       f"critique could not be accommodated. For example, something you asked for is not available information."
                        f"you can provide feedback on the revised article or "
                        f"return only the word 'None' without surrounding hash mark if you think the article is good."
         }] 
@@ -126,7 +126,7 @@ class CritiqueAgent:
             return {'critique': response, 'message': None}
 
     def run(self, article: dict):
-        print("critiquer working...",article.keys())
+        print("criticizer working...",article.keys())
         article.update(self.critique(article))
         article["form"]=1
         if "message" in article:
