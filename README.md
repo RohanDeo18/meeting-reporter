@@ -10,7 +10,7 @@ The agents are prompted to create a news story in collaboration with a human(you
 
 This concept could easily be extended to different types of news stories as well as different sources ands could include fact checking, RAG from an archive etc.
 
-## overview
+## Overview
 
 [langgraph](https://github.com/langchain-ai/langgraph)is a library for building stateful, multi-actor applications with LLMs, built on top of (and intended to be used with) LangChain. It is low-code but not no-code.
 
