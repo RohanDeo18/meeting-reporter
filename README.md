@@ -10,8 +10,6 @@ The agents are prompted to create a news story in collaboration with a human(you
 
 This concept could easily be extended to different types of news stories as well as different sources ands could include fact checking, RAG from an archive etc.
 
-I started with meetings because there are many more public meetings than there are reporters to cover them.
-
 ## overview
 
 [langgraph](https://github.com/langchain-ai/langgraph)is a library for building stateful, multi-actor applications with LLMs, built on top of (and intended to be used with) LangChain. It is low-code but not no-code.
@@ -26,7 +24,7 @@ mytools.py are a few miscellaneous utilities of mine.
 
 mm_tkinter.py contains  the tkinter specific code. It is not used in the streamlit version.
 
-## ideas for enhancement
+## Ideas for enhancement
 
 1. Select a prompt depending on the content of the source
 2. Incorporate fact checking via browsing
