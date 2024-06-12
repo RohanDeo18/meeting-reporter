@@ -31,13 +31,11 @@ mm_tkinter.py contains  the tkinter specific code. It is not used in the streaml
 1. Select a prompt depending on the content of the source
 2. Incorporate fact checking via browsing
 3. Include a process for improving the prompts based on frequent critiques
-4. add sources and stories to a database (a morgue in news terms)
-5. use RAG to consult the morgue and get background
-6. embed in a larger collaborative newsroom process
+4. Add sources and stories to a database (a morgue in news terms)
+5. Use RAG to consult the morgue and get background
+6. Embed in a larger collaborative newsroom process
 7. Accept audio files for input
-8. incorporate graphics
-
-pull requests welcome
+8. Incorporate graphics
 
 ## privacy
 
